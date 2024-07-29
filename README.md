@@ -9,12 +9,16 @@ This project is related to stock exchange management. Each stock exchange can ha
 You can find all endpoint in this link = https://documenter.getpostman.com/view/2553103/2sA3kbex3y
 
 
-## Setup
+## Setup and Rund
 
-git clone 
+git clone https://github.com/tahagoker/stockExchangeApp.git
+
+cd stockExchangeApp
 
 ./mvnw clean package
 
 docker build -t stock-exchange-app .
 
 docker run -p 8080:8080 stock-exchange-app
+
+

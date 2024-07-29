@@ -21,7 +21,7 @@ spring:
 logging:
   level:
     com.stock.stockExchangeApp: DEBUG
-    org.springframework.security: TRACE
+    org.springframework.security: INFO
     org.hibernate: DEBUG
     org.springframework.web: INFO
     org.springframework.data: ERROR
