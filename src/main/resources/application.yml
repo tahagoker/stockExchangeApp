@@ -1,0 +1,29 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: password
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+  h2:
+    console:
+      enabled: true
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration
+      - org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
+      - org.springframework.boot.actuate.autoconfigure.security.servlet.ManagementWebSecurityAutoConfiguration
+logging:
+  level:
+    com.stock.stockExchangeApp: DEBUG
+    org.springframework.security: TRACE
+    org.hibernate: DEBUG
+    org.springframework.web: INFO
+    org.springframework.data: ERROR
+    org.springframework.boot: INFO
+    org.springframework: INFO
